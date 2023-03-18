@@ -1,11 +1,10 @@
-package com.example.myapplication
+package com.msai.myportraitseg
 
 import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.os.Bundle
 import android.util.Log
-import android.view.SurfaceView
 import android.view.View
 import android.view.WindowManager
 import android.widget.ImageView
@@ -137,7 +136,7 @@ class MainActivity : CameraActivity(), CvCameraViewListener2, View.OnClickListen
     private fun loadOpenCVConfigs() {
         mOpenCvCameraView = findViewById(R.id.HelloOpenCvView)
         mOpenCvCameraView.setCameraIndex(CAMERA_ID_FRONT)
-        mOpenCvCameraView.visibility = SurfaceView.VISIBLE
+        mOpenCvCameraView.visibility = VISIBLE
         mOpenCvCameraView.setCvCameraViewListener(this)
         mOpenCvCameraView.setCameraPermissionGranted()
 
@@ -242,43 +241,53 @@ class MainActivity : CameraActivity(), CvCameraViewListener2, View.OnClickListen
 
         when(v?.id) {
             R.id.imageView0 -> {
-                selectedBackground = BitmapFactory.decodeResource(this.resources, R.drawable.background_0, option)
+                selectedBackground = BitmapFactory.decodeResource(this.resources,
+                    R.drawable.background_0, option)
             }
 
             R.id.imageView1 -> {
-                selectedBackground = BitmapFactory.decodeResource(this.resources, R.drawable.background_1, option)
+                selectedBackground = BitmapFactory.decodeResource(this.resources,
+                    R.drawable.background_1, option)
             }
 
             R.id.imageView2 -> {
-                selectedBackground = BitmapFactory.decodeResource(this.resources, R.drawable.background_2, option)
+                selectedBackground = BitmapFactory.decodeResource(this.resources,
+                    R.drawable.background_2, option)
             }
 
             R.id.imageView3 -> {
-                selectedBackground = BitmapFactory.decodeResource(this.resources, R.drawable.background_3, option)
+                selectedBackground = BitmapFactory.decodeResource(this.resources,
+                    R.drawable.background_3, option)
             }
 
             R.id.imageView4 -> {
-                selectedBackground = BitmapFactory.decodeResource(this.resources, R.drawable.background_4, option)
+                selectedBackground = BitmapFactory.decodeResource(this.resources,
+                    R.drawable.background_4, option)
             }
 
             R.id.imageView5 -> {
-                selectedBackground = BitmapFactory.decodeResource(this.resources, R.drawable.background_5, option)
+                selectedBackground = BitmapFactory.decodeResource(this.resources,
+                    R.drawable.background_5, option)
             }
 
             R.id.imageView6 -> {
-                selectedBackground = BitmapFactory.decodeResource(this.resources, R.drawable.background_6, option)
+                selectedBackground = BitmapFactory.decodeResource(this.resources,
+                    R.drawable.background_6, option)
             }
 
             R.id.imageView7 -> {
-                selectedBackground = BitmapFactory.decodeResource(this.resources, R.drawable.background_7, option)
+                selectedBackground = BitmapFactory.decodeResource(this.resources,
+                    R.drawable.background_7, option)
             }
 
             R.id.imageView8 -> {
-                selectedBackground = BitmapFactory.decodeResource(this.resources, R.drawable.background_8, option)
+                selectedBackground = BitmapFactory.decodeResource(this.resources,
+                    R.drawable.background_8, option)
             }
 
             R.id.imageView9 -> {
-                selectedBackground = BitmapFactory.decodeResource(this.resources, R.drawable.background_9, option)
+                selectedBackground = BitmapFactory.decodeResource(this.resources,
+                    R.drawable.background_9, option)
             }
 
             R.id.imageViewDefault -> {

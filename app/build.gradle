@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace 'com.example.myapplication'
+    namespace 'com.msai.myportraitseg'
     compileSdk 33
 
     //  To fix error: 2 files found with path 'lib/arm64-v8a/libc++_shared.so' from inputs
@@ -16,7 +16,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.example.myapplication"
+        applicationId "com.msai.myportraitseg"
         minSdk 29
         targetSdk 33
         versionCode 1

@@ -19,7 +19,7 @@
         android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
         tools:targetApi="33">
         <activity
-            android:name=".MainActivity"
+            android:name="com.msai.myportraitseg.MainActivity"
 
             android:screenOrientation="landscape"
             android:configChanges="keyboardHidden|orientation"

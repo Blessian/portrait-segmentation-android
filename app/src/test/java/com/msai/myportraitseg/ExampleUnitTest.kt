@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.msai.myportraitseg
 
 import org.junit.Test
 
