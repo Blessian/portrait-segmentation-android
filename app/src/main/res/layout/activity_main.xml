@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:opencv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <org.opencv.android.JavaCamera2View
+        android:id="@+id/HelloOpenCvView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        opencv:camera_id="any"
+        opencv:layout_constraintBottom_toBottomOf="parent"
+        opencv:layout_constraintEnd_toEndOf="parent"
+        opencv:layout_constraintHorizontal_bias="0.0"
+        opencv:layout_constraintStart_toStartOf="parent"
+        opencv:layout_constraintTop_toTopOf="parent"
+        opencv:layout_constraintVertical_bias="0.0"
+        opencv:show_fps="true" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:fadingEdge="horizontal"
+        android:rotation="180"
+        android:scrollbars="none"
+        opencv:layout_constraintBottom_toBottomOf="parent"
+        opencv:layout_constraintEnd_toEndOf="parent"
+        opencv:layout_constraintHorizontal_bias="1.0"
+        opencv:layout_constraintStart_toStartOf="parent"
+        opencv:layout_constraintTop_toTopOf="parent"
+        opencv:layout_constraintVertical_bias="1.0"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageViewDefault"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:foreground="@android:drawable/ic_delete"
+                android:rotation="90" />
+
+            <ImageView
+                android:id="@+id/imageView0"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:foreground="@drawable/background_0"
+                android:rotation="90" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:foreground="@drawable/background_1"
+                android:rotation="90" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:foreground="@drawable/background_2"
+                android:rotation="90" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:foreground="@drawable/background_3"
+                android:rotation="90" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:foreground="@drawable/background_4"
+                android:rotation="90" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:foreground="@drawable/background_5"
+                android:rotation="90" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:foreground="@drawable/background_6"
+                android:rotation="90" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:foreground="@drawable/background_7"
+                android:rotation="90" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:foreground="@drawable/background_8"
+                android:rotation="90" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:foreground="@drawable/background_9"
+                android:rotation="90" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
